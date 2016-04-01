@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="themes/MyTheme.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile- 1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"> </script>
+        <script src="app.js"></script>
+    </head>
+        <body>
+        <div data-role="page" id="MyProjects" data-theme="b">
+
+
+
+
+            <header data-role="header" data-theme="a">
+                <h1 align="center">My Projects</h1>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="MainPage.html" data-icon="home">Home</a></li>
+                        <li><a href="About%20me.html" data-icon="info">about me</a></li>
+                        <li><a href="Contact.html" data-icon="action">contact  me</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+
+           These are the project I am working on, I will continue to add more over time:
+
+            <ul>
+                <li id="items" data‐role="listview" data‐inset="true"></li>
+            </ul>
+
+
+
+            <input type="text" name="item" placeholder="Describe your current project" onchange="add();">
+
+            <button type="button" id="removeList">Remove Project</button><br>
+
+
+            <footer data-role="footer" data-position="fixed" >
+                <h4 class="ui-title" role="heading" aria-level="1" align="bottom"> © Made by Kevin</h4>
+            </footer>
+        </div>
+    </body>
+</html>
